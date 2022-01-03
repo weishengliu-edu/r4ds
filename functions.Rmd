@@ -455,7 +455,7 @@ It's ok to drop the curly braces if you have a very short `if` statement that ca
 
 ```{r}
 y <- 10
-x <- if (y < 20) "Too low" else "Too high"
+x <- ifelse(y < 20, "Too low", "Too high")
 ```
 
 I recommend this only for very brief `if` statements.
